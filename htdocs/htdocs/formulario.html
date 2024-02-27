@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formulário de inscrição</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h2> Insira as informações a seguir:</h2>
+        <h4> Formulário para compra de carro.</h4>
+
+        <img src="./Ferrari.jpg" alt="Logo Ferrari">
+
+        <h4> Informações do comprador:</h4>
+
+        <legend>Nome: </legend>
+        <div><label for="Nome completo:"></label> <input id="Nome" type="text"></div>
+        <legend>CPF: </legend>
+        <div><label for="CPF:"></label> <input id="CPF" type="text"></div>
+        <legend>Data de nascimento: </legend>
+        <div><label for="Data de nascimento:"></label> <input id="Data" type="date"></div>
+        <legend>Telefone: </legend>
+        <div><label for="Telefone:"></label> <input id="Tel" type="tel"></div>
+        <legend>Email: </legend>
+        <div><label for="Email:"></label> <input id="Email" type="email"></div>
+
+        <h4> Informações do carro:</h4>
+        <legend>Modelo: </legend>
+        <div><label for="Modelo:"></label> <input id="Modelo" type="text"></div>
+        <legend>Ano: </legend>
+        <div><label for="Ano:"></label> <input id="Ano" type="number"></div>
+        <legend>Cor: </legend>
+        <div><label for="Cor:"></label> <input id="Cor" type="color"></div>
+        <br>
+        <legend> Selecione o tipo de pagamento:</legend>
+        <div>
+            <input type="radio" id="debito" name="pag" value="debito" checked />
+            <label for="Debito">Debito </label>
+            <input type="radio" id="credito" name="pag" value="credito" checked />
+            <label for="credito">Credito </label>
+            <input type="radio" id="pix" name="pag" value="pix" checked />
+            <label for="pix">Pix </label>
+        </div>
+
+        <br>
+        
+        <div>
+            <label for="confirmar"></label>
+            <a href="./listaCompras.html"> <input id="confirmar" type="button" value="confirmar"></a>
+        </div>
+    </body>
+</html>
