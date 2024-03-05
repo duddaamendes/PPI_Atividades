@@ -1,4 +1,4 @@
-h1 {
+h1, h3 {
     color: red;
 }
 
@@ -6,10 +6,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-td{
+td, table{
     border: 1px solid black;
 }
 
-table{
-    border: 1px solid black;
+p{
+    font-size: 12px;
 }
