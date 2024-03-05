@@ -98,8 +98,8 @@ box1:hover{
 }
 
 video{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border: 1px dashed coral;
     background-color: green;
 }
