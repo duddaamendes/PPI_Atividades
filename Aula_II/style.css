@@ -1,0 +1,112 @@
+/*
+    Regra CSS
+    Selector{
+        propriedade: valor;
+    }
+*/
+/*Tirar a margem da página */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html{
+    border: 1ps solid green;
+}
+
+body{
+    border: 1ps solid red;
+}
+h1{
+    border: 1px solid black;
+}
+
+table, td{
+    border: 4px double black;
+    border-style: ridge;
+    border-collapse: collapse;
+}
+
+th,caption{
+    border: 1px solid purple;
+}
+
+thead{
+    background-color: gold;
+}
+
+tfoot{
+    background-color: cornflowerblue;
+}
+
+img{
+    width: 200px;
+    display: block;
+}
+
+div > img{
+    width: 20%;
+    border-radius: 10%;
+
+}
+
+#churrasco{ /*img filha do body*/
+    width: 100%;
+}
+span{
+    display: block;
+}
+ul,ol{
+    border: 1px solid red;
+    width:200px;
+    height: 100px;
+    display: inline-block;
+}
+
+#box1{
+    width: 300px;
+    height: 300px;
+    border: 1px dashed coral;
+    background-color: green;
+    background-image: url(./house.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-position: 100px 100px*/;
+    border-radius: 50%;
+    text-align: center;
+}
+
+box1:hover{
+    zoom: 1.4;
+}
+
+#box2{
+    width: 300px;
+    height: 300px;
+    border: 1px dashed coral;
+    background-color: green;
+    background-image: url(./chicoCoin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: aliceblue;
+    opacity: 0.5;
+    transition: 3s;
+    /*background-position: 100px 100px*/;
+}
+
+video{
+    width: 300px;
+    height: 300px;
+    border: 1px dashed coral;
+    background-color: green;
+}
+
+body{
+    background-color: beige;
+    background-image: url(./fundo.png);
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
