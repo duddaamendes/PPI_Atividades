@@ -11,6 +11,6 @@ td, table{
     border-collapse: collapse;
 }
 
-p{
-    font-size: 12px;
+p, li{
+    font-size: 14px;
 }
