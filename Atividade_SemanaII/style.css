@@ -1,7 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 h2, h5{
     text-align: center;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
+}
+
+table, td, th, caption{
+    border: 4px solid black;
+    border-style: ridge;
+    border-collapse: collapse;
+    page-break-inside: auto;
+    text-align: center;
+}
+
+li{
+    color: black;
+}
+
+thead{
+    background-color: gray;
+}
+
+th{
+    width: 3cm;
+}
+
+img{
+    width: 50%;
+    border-radius: 10%;
+    align-content: center;
 }
