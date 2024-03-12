@@ -1,0 +1,19 @@
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 5px solid rgba(255, 0, 0, 0.212);
+    outline-offset: 10px;
+    outline: 10px dotted greenyellow;
+
+    margin: 20px;
+}
+
+#box1{
+    background-color: blueviolet;
+}
+
+#box2{
+    background-color: blue;
+}
