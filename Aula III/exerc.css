@@ -1,0 +1,35 @@
+.box{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    text-e
+}
+
+#box1{
+    background-color: burlywood;
+}
+
+#box2{
+    top: 0px;
+    right: 0px;
+    background-color: brown;
+}
+
+#box3{
+    bottom: 0px;
+    right: 0px;
+    background-color: green;
+}
+
+#box4{
+    bottom: 0px;
+    background-color: tan;
+}
+
+#box5{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: bisque;
+}

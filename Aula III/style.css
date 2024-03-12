@@ -8,6 +8,8 @@
     outline: 10px dotted greenyellow;
 
     margin: 20px;
+    line-height: 200px;
+    text-align: center;
 }
 
 #box1{
