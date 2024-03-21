@@ -1,0 +1,68 @@
+.box{
+    border: 1px double magenta;
+    height: 100px;
+    width: 100px;
+    font-size: 20pt;
+    text-align: center;
+    position: relative;
+    animation: moveright 5s linear 0s infinite;
+          /* nome duração tempo-funcionamento delay número-interação direção fill-mode*/
+}
+
+#c1box1{
+    animation: moveright 0.1s linear 0s infinite;
+}
+
+
+.box:hover { /*quando o mause estiver sobre ele */
+    
+}
+
+
+body{
+    animation: gira 1s linear infinite;
+}
+
+@keyframes moveright {
+    0% {
+        left: 0px;
+        
+    }
+
+    /*50%{
+        left: 300px;
+    }*/
+
+    100%{
+        left: 800px;
+        background-color: blue;
+    }
+}
+
+/*@keyframes gira{
+    0%{
+        transform: translate(-30px, 40px);
+
+    }
+    100%{
+        transform: translate(100px, 400px);
+    }
+}*/
+
+#rocket{
+    width: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    animation: lancamento 5s ease-in 0s infinite;
+}
+
+@keyframes lancamento {
+    0%{
+        top: 100%;
+    }
+
+    100%{
+        top:0px;
+    }
+}
