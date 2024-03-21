@@ -1,7 +1,4 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 
 h2, h5{
     text-align: center;
@@ -11,16 +8,16 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+h4{
+    color: #363636;
+}
+
 table, td, th, caption{
     border: 4px solid black;
     border-style: ridge;
     border-collapse: collapse;
     page-break-inside: auto;
     text-align: center;
-}
-
-li{
-    color: black;
 }
 
 thead{
