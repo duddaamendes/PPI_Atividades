@@ -17,7 +17,7 @@
 #box3{
     bottom: 0px;
     right: 0px;
-    background-color: palevioletred ;
+    background-color: green ;
 }
 
 #box4{
@@ -29,5 +29,5 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: green;
+    background-color: rgb(222, 26, 147);
 }

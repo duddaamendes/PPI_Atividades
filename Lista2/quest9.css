@@ -1,0 +1,140 @@
+#tela{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 1px solid black;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#nome{
+    margin-top: -30px;
+}
+
+#tela > div {
+    width: 100%;
+    margin-bottom: -2px; 
+}
+
+img{
+    height: 20px;
+    width: 20px;
+}
+
+.convP, .convE {
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-top: -5;
+    border-radius: 5px;
+    align-items: center;
+}
+.convP {
+    justify-content: flex-start; 
+}
+
+.convE{
+    justify-content: flex-end; 
+    background-color: lightgreen;
+}
+
+.hr {
+    align-self: flex-end; 
+    margin-top: auto; 
+    margin-bottom: 3px; 
+}
+
+.fotoE{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fotoE {
+    margin-right: 10px;
+}
+
+#BarraPesq {
+    display: flex;
+    border: 1px solid black;
+    width: 180px;
+    height: 30px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#APesquisa{
+    display: grid;
+    border: 1px solid black;
+    justify-content: center;
+    height: 70px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: -40px; 
+}
+
+#enviar{
+    width: 40px;
+    height: 20px;
+    margin-top: -20px;
+    font-size: 10px;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#larg{
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 80px;
+}
+
+#links{
+    display: inline;
+    margin-left: auto;
+    font-size: 25px;
+}
+
+#links>a{
+    margin-right: 50px;
+}
+
+.img{
+    height: auto;
+    width: 100%;
+}
+
+#imgPF, #imgSorv, #imgSorv2{
+    background-color: lightgray;
+    width: 100%;
+    margin-top: 20px;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    border-radius: 10px;
+
+}
+
+#imgPF>img, #imgSorv>img, #imgSorv2>img{
+    width: 90%;
+    height: 200px;
+    margin-top: 10px;
+}
