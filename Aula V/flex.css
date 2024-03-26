@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    /*flex-direction: column-reverse; -> fica ao contrário*/
+    flex-wrap: wrap; /*quegra a linha*/
+    justify-content: space-evenly;
+    /*align-items: center;*/
+    align-content: stretch;
+    border: 1px solid black;
+}
+
+.box{
+    border: 1px solid black;
+    flex-shrink: 0;
+
+}
+
+#c1-box5{
+    align-self: center;
+}
