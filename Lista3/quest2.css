@@ -1,0 +1,27 @@
+#tela{
+    display: flex;
+    width: 50%;
+    height: 700px;
+    border: 1px solid gray;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+    /*flex-direction: column-reverse; -> fica ao contrário*/
+     /*quegra a linha*/
+    justify-content: space-evenly;
+    /*align-items: center;*/
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6{
+    background-color: gray;
+}

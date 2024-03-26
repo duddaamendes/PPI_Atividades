@@ -11,11 +11,19 @@
 }
 
 .box{
-    border: 1px solid black;
-    flex-shrink: 0;
+    border: 3px solid brown;
+    flex-shrink: 0; /*pode ser distorcido, para cada elemento*/
+    min-height: 30px;
 
 }
 
+.box:hover{
+    flex-grow: 1;
+    background-color: burlywood;
+    transition: 2s;
+}
+
 #c1-box5{
-    align-self: center;
+    align-self: flex-start;
+    
 }
