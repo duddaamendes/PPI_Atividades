@@ -1,17 +1,15 @@
 #tela{
-    display: flex;
     position: fixed;
     bottom: 0;
     right: 0;
     border: 1px solid black;
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: min-content;
     height: 300px;
     padding: 20px;
+    padding-top: 50px;
     border-radius: 10px;
     font-size: 15px;
+    background-color: white;
 }
 
 #nome{
@@ -20,7 +18,6 @@
 
 #tela > div {
     width: 100%;
-    margin-bottom: -2px; 
 }
 
 img{
@@ -52,24 +49,15 @@ img{
 }
 
 .fotoE{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.fotoE {
     margin-right: 10px;
 }
 
+
 #BarraPesq {
-    display: flex;
     border: 1px solid black;
     width: 180px;
     height: 30px;
-    margin-bottom: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 #APesquisa{
@@ -95,26 +83,23 @@ img{
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    padding-left: 30%;
 }
 
 #larg{
-    width: 50%;
-    display: flex;
-    flex-direction: column; 
+    width: 50%; 
+    display: inline;
     margin-top: 80px;
 }
 
 #links{
-    display: inline;
-    margin-left: auto;
-    font-size: 25px;
+    padding-left: 40%;
+    font-size: 20px;
 }
 
 #links>a{
-    margin-right: 50px;
+    margin-left: 20px;
 }
 
 .img{
@@ -126,9 +111,7 @@ body{
     background-color: lightgray;
     width: 100%;
     margin-top: 20px;
-    display: flex; 
-    align-items: center; 
-    flex-direction: column; 
+    padding-left: 10%;
     border-radius: 10px;
 
 }

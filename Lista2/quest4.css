@@ -1,0 +1,11 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+
+div:hover{
+    flex-grow: 1;
+    background-color: burlywood;
+    transition: 2s;
+}

@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    align-content: stretch;
+    border: 1px solid black;
+}
+
+.box{
+    min-height: 30px;
+}
+
+.box:hover{
+    flex-grow: 1;
+    background-color: burlywood;
+    transition: 2s;
+}
+
+.band{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute; 
+}
+
