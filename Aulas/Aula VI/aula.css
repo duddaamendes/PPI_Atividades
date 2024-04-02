@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box, .conteiner{
+    border: 1px solid black;
+}
+
+.conteiner{ /*definir a estrutura do grip*/
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 100px);
+}
+
+#box-1{
+    background-color: cadetblue;
+
+    grid-column-start: 3;
+    grid-column-end: span 3;
+
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
