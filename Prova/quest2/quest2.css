@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+#cont{
+    width: 500px;
+    height: 600px;
+    background-color: darkgrey;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-areas: 
+        "barra barra barra barra"
+        "num7 num8 num9 numB"
+        "num4 num5 num6 numA"
+        "num1 num2 num3 num-"
+        "num0 numP numI numM"
+    ;
+
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-gap: 2px;
+
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#barra{
+    grid-area: barra;
+    border: 1px solid gray;
+    background-color: gainsboro;
+
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.box{
+    border: 1px solid gray;
+    background-color: gainsboro;
+
+    height: 80px;
+    margin: 10px;
+    
+}
+
