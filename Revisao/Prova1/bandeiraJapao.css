@@ -1,0 +1,16 @@
+.conteiner {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+.box {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 10px;
+}

@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.box, .conteiner{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-areas: 
+        "gA gA gV gB"
+        "gC gGr gGr gGr"
+    ;
+    grid-gap: 20px;
+    grid-template-columns: 30% 20% 30% 20%;
+    grid-template-rows: 30% 70%;
+
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#boxA{
+    background-color: rgb(59, 54, 54);
+    grid-area: gA;
+    color:  white;
+}
+
+#boxB{
+    background-color: rgb(59, 54, 54);
+    grid-area: gB;
+    color:  white;
+}
+
+#boxC{
+    background-color: rgb(59, 54, 54);
+    grid-area: gC;
+    color:  white;
+}
+
+#boxCe{
+    grid-area: gGr;
+    background-color: rgb(59, 54, 54);
+}
+
+.conteinerC{
+    grid-area: gGr;
+    display: grid;
+    grid-template-areas: 
+        "gE gF gG"
+        "gM gI gJ"
+    ;
+
+    grid-gap: 20px;
+    grid-template-columns: 25% 40% 25%;
+    grid-template-rows: 45% 45%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(59, 54, 54);
+    width: 100%;
+    height: 100%;
+}
+
+#boxE{
+    background-color: gray;
+    grid-area: gE;
+
+    color: rgb(59, 54, 54);
+}
+
+#boxF{
+    background-color: gray;
+    grid-area: gF;
+
+    color: rgb(59, 54, 54);
+}
+
+#boxG{
+    background-color: gray;
+    grid-area: gG;
+
+    color: rgb(59, 54, 54);
+}
+
+#boxM{
+    background-color: gray;
+    grid-area: gM;
+
+    color: rgb(59, 54, 54);
+}
+
+#boxI{
+    background-color: gray;
+    grid-area: gI;
+
+    color: rgb(59, 54, 54);
+}
+
+#boxJ{
+    background-color: gray;
+    grid-area: gJ;
+
+    color: rgb(59, 54, 54);
+}

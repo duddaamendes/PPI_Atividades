@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+#conteiner{
+    display: grid;
+    grid-template-areas: 
+        "head"
+        "img"
+        "foot"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+}
+
+#head{
+    grid-area: head;
+    background-color: cadetblue;
+}
+
+#body{
+    grid-area: img;
+}
+
+#foot{
+    grid-area: foot;
+    background-color: cadetblue;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    font-size: 40px;
+    color: darkslateblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

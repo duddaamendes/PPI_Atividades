@@ -1,0 +1,33 @@
+.box{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#esquerdaCima{
+    background-color: red;
+}
+
+#direitaCima{
+    top: 0px;
+    right: 0px;
+    background-color: purple;
+}
+
+#esquerdaBaixo{
+    bottom: 0px;
+    background-color: green;
+}
+
+#direitaBaixo{
+    bottom: 0px;
+    right: 0px;
+    background-color: yellow;
+}
+
+#centro{
+    left: 50%;
+    top: 50%;
+    background-color: grey;
+}

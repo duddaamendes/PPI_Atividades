@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+div{
+    width: 30%;
+    height: 80%;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+div:hover{
+    flex-grow: 1;
+    background-color: darkolivegreen;
+    width: 50%;
+    transition: 2s;
+}
