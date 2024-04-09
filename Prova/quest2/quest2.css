@@ -15,7 +15,7 @@
         "barra barra barra barra"
         "num7 num8 num9 numB"
         "num4 num5 num6 numA"
-        "num1 num2 num3 num-"
+        "num1 num2 num3 numT"
         "num0 numP numI numM"
     ;
 
@@ -25,6 +25,10 @@
 
     border-radius: 5px;
     padding: 10px;
+    margin: 20px;
+
+    justify-content: center;
+    align-items: center;
 }
 
 #barra{
@@ -32,10 +36,14 @@
     border: 1px solid gray;
     background-color: gainsboro;
 
-    height: 50px;
+    height: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    font-size: 30px;
+    padding-right: 10px;
+
+    border-radius: 5px;
 }
 
 .box{
@@ -44,6 +52,83 @@
 
     height: 80px;
     margin: 10px;
-    
+
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
 }
 
+#num7{
+    grid-area: num7;
+}
+#num8{
+    grid-area: num8;
+}
+
+#num9{
+    grid-area: num9;
+}
+
+#numB{
+    grid-area: numB;
+}   
+
+#num4{
+    grid-area: num4;
+}
+
+#num5{
+    grid-area: num5;
+}
+
+#num6{
+    grid-area: num6;
+}
+
+
+#numA{
+    grid-area: numA;
+}
+
+
+#num1{
+    grid-area: num1;
+}
+
+
+#num2{
+    grid-area: num2;
+}
+
+
+#num3{
+    grid-area: num3;
+}
+
+
+#numT{
+    grid-area: numT;
+}
+
+
+#num0{
+    grid-area: num0;
+}
+
+
+#numP{
+    grid-area: numP;
+}
+
+
+#numI{
+    grid-area: numI;
+}
+
+
+#numM{
+    grid-area: numM;
+}
