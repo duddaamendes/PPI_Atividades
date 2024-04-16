@@ -22,6 +22,7 @@ body{
 }
 
 #header{
+    
     display: flex;
     font-size: 10px;
     background-color: white;
@@ -127,6 +128,7 @@ ul, li{
     background-color: darkred;
     color: white;
     text-align: center;
+    padding: 30px;
 
     width: 80%;
     height: 500px;
