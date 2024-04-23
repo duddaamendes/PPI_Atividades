@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Clique para mudar de cor</div>
+</body>
+
+<script>
+    let meuBody = document.body;
+
+    function mudarFundo(){
+        meuBody.style.backgroundColor='#0099CC';
+    }
+
+    meuBody.addEventListener('click', mudarFundo);
+</script>
+</html>
