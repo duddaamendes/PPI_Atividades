@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">Clique para realizar uma soma</button>
+    <h4>O resultado é:</h4>
+    <p id="result">-</p>
+</body>
+<script>
+    function soma(){
+        let a=Number(prompt("Informe o valor de A:"));
+        let b=Number(prompt("Informe o valor de B:"));
+
+        let paragrafo = document.getElementById("result");
+        paragrafo.innerHTML=a+b;
+    }
+
+    let p=document.getElementById("button");
+    p.addEventListener('click',soma);
+</script>
+</html>

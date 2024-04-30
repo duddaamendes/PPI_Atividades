@@ -1,0 +1,32 @@
+<!--Códico com problemas de execução-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.getElementById("output").innerText = "HelloWorld";
+    </script>
+    <!--Da erro pois ele não encontra a id "output"-->
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
+<!--Código sem problema de execução-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        document.getElementById("output").innerText = "HelloWorld";
+    </script>
+</body>
+</html>

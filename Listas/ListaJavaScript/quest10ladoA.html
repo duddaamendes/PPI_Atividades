@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">Gerar Número Aleatório</button>
+    <p>Número aleatório: </p>
+    <p id="result"></p>
+</body>
+<script>
+    function gerarNumeroAleatorio() {
+        let numAle = Math.floor(Math.random() * 1000) + 0;
+        document.getElementById("result").textContent = numAle;
+    }
+
+    let p = document.getElementById("button");
+    p.addEventListener("click", gerarNumeroAleatorio);
+</script>
+</html>

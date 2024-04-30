@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Insira um texto:</h1>
+    Texto:
+    <input type="text" name="" id="meuInput">
+    <br>
+    <br>
+    <button id="button">Copiar Texto</button>
+    <br>
+    <br>
+    <div id="idparagrafos">
+
+    </div>
+</body>
+
+<script>
+    let txtInput = document.querySelector("#meuInput");
+    let btn = document.querySelector("#button");
+    let listaParagrafor = document.querySelector("#idparagrafos");
+
+    function copiaTexto(){
+        listaParagrafor.innerHTML = listaParagrafor.innerHTML+"<div>"+
+                                    txtInput.value+ "<div>";
+        txtInput.value = "";
+        
+    }
+
+    btn.addEventListener('click', copiaTexto);
+</script>
+</html>

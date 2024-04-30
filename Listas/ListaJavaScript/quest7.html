@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Insira um texto:</h1>
+    Número 1:
+    <input type="text" name="" id="num1">
+    <br>
+    <br>
+    Número 2:
+    <input type="text" name="" id="num2">
+    <br>
+    <br>
+    <button id="button">Somar</button>
+    <br>
+    <br>
+    <div id="result"></div>
+</body>
+
+<script>
+    function soma() {
+        let numero1 = Number(document.querySelector("#num1").value);
+        let numero2 = Number(document.querySelector("#num2").value);
+
+        let resultado = document.getElementById("result");
+        resultado.innerHTML = numero1 + numero2;
+
+        let result = numero1 + numero2;
+        window.alert(result);
+        window.console.log(result);
+    }
+
+    let btn = document.getElementById("button");
+    btn.addEventListener('click', soma);
+</script>
+</html>
