@@ -9,23 +9,17 @@
     <button id="button">Alterar Cor de Fundo</button>
 </body>
 <script>
-    function geradorCorAleatoria() {
-        const letras = '0123456789ABCDEF';
-        let cor = '#';
-      
-        for (let i = 0; i < 6; i++) {
-            cor += letras[Math.floor(Math.random() * 16)];
-        }
-      
-        return cor;  
+    var btn = document.querySelector("button");
+
+    function random(number) {
+        return Math.floor(Math.random() * (number + 1));
     }
 
-    function trocarFundo() {
-        let novaCor = geradorCorAleatoria();
-      
-        document.body.style.backgroundColor = newColor;
+    function trocarFundo(){
+        var rndCol = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+        document.body.style.backgroundColor = rndCol;
     }
-
+    
     let p = document.getElementById("button");
     p.addEventListener("click", trocarFundo);
 </script>

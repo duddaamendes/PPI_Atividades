@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        #conteiner {
+            width: 200px;
+            height: 300px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            display: grid;
+            grid-template-areas: 
+                "result result"
+                "equacoes equacoes"
+                "num igual";
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 15% 15% 70%;
+        }
+
+        #result {
+            grid-area: result;
+            background-color: gray;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 10px;
+            font-size: 24px;
+            border: 1px solid gray;
+        }
+
+        #equacoes {
+            grid-area: equacoes;
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        #nums {
+            grid-area: num;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border: 1px solid gray;
+            cursor: pointer; /* Adicionado para o cursor mudar ao passar por cima dos botões */
+        }
+
+        #igual {
+            grid-area: igual;
+            background-color: coral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            border: 1px solid gray;
+            cursor: pointer; /* Adicionado para o cursor mudar ao passar por cima do botão */
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="result">0</div>
+        <div id="equacoes">
+            <div class="btn" id="ad">+</div>
+            <div class="btn" id="sub">-</div>
+            <div class="btn" id="mult">x</div>
+            <div class="btn" id="div">/</div>
+        </div>
+        <div id="nums">
+            <div class="btn" id="sete">7</div>
+            <div class="btn" id="oito">8</div>
+            <div class="btn" id="nove">9</div>
+            <div class="btn" id="quatro">4</div>
+            <div class="btn" id="cinco">5</div>
+            <div class="btn" id="seis">6</div>
+            <div class="btn" id="um">1</div>
+            <div class="btn" id="dois">2</div>
+            <div class="btn" id="tres">3</div>
+            <div class="btn" id="zero">0</div>
+            <div class="btn" id="ponto">.</div>
+            <div class="btn" id="ac">AC</div>
+        </div>
+        <div id="igual">=</div>
+    </div>
+
+    <script>
+        const resultDisplay = document.getElementById('result');
+        let currentOperand = '';
+        let previousOperand = '';
+        let operation = undefined;
+
+        function clear() {
+            currentOperand = '';
+            previousOperand = '';
+            operation = undefined;
+            updateDisplay();
+        }
+
+        function appendNumber(number) {
+            if (number === '.' && currentOperand.includes('.')) return;
+            currentOperand += number.toString();
+            updateDisplay();
+        }
+
+        function chooseOperation(op) {
+            if (currentOperand === '') return;
+            if (previousOperand !== '') {
+                compute();
+            }
+            operation = op;
+            previousOperand = currentOperand;
+            currentOperand = '';
+            updateDisplay();
+        }
+
+        function compute() {
+            let computation;
+            const prev = parseFloat(previousOperand);
+            const current = parseFloat(currentOperand);
+            if (isNaN(prev) || isNaN(current)) return;
+            switch (operation) {
+                case '+':
+                    computation = prev + current;
+                    break;
+                case '-':
+                    computation = prev - current;
+                    break;
+                case 'x':
+                    computation = prev * current;
+                    break;
+                case '/':
+                    computation = prev / current;
+                    break;
+                default:
+                    return;
+            }
+            currentOperand = computation;
+            operation = undefined;
+            previousOperand = '';
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            resultDisplay.innerText = currentOperand;
+        }
+
+        document.getElementById('nums').addEventListener('click', (e) => {
+            if (e.target.classList.contains('btn')) {
+                const btnValue = e.target.innerText;
+                if (btnValue === 'AC') {
+                    clear();
+                } else if (btnValue === '=') {
+                    compute();
+                } else {
+                    appendNumber(btnValue);
+                }
+            }
+        });
+
+        document.getElementById('equacoes').addEventListener('click', (e) => {
+            if (e.target.classList.contains('btn')) {
+                const btnValue = e.target.innerText;
+                chooseOperation(btnValue);
+            }
+        });
+    </script>
+</body>
+</html>
