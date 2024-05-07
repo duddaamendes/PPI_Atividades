@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Questão 7</title>
 </head>
 <body>
     <h1>Insira um texto:</h1>
-    Número 1:
+    <label for="num1">Número 1:</label>
     <input type="text" name="" id="num1">
     <br>
     <br>
-    Número 2:
+    <label for="num2">Número 2:</label>
     <input type="text" name="" id="num2">
     <br>
     <br>
@@ -32,6 +32,9 @@
         let result = numero1 + numero2;
         window.alert(result);
         window.console.log(result);
+
+        document.querySelector("#num1").value = "";
+        document.querySelector("#num2").value = "";
     }
 
     let btn = document.getElementById("button");
