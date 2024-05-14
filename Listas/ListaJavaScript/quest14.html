@@ -94,12 +94,45 @@
     <script>
         let display = document.querySelector("#result");
         let equacao = 0;
-        display.textContent = equacao
+        let num1;
+        let num2;
+        display.textContent = equacao;
 
         let bntEqual = document.querySelector("#igual");
         bntEqual.addEventListener("click", () => {
-            display.textContent = eval("1");
-        })
+            if (num1 !== null && num2 !== null) {
+                equacao = eval(equacao);
+                display.textContent = equacao;
+                num1 = null;
+                num2 = null;
+            }
+        });
+
+        let btns = document.querySelectorAll(".btn");
+        btns.forEach(button => {
+            button.addEventListener("click", () => {
+                let value = button.textContent;
+                if (value === "AC") {
+                    equacao = 0;
+                    num1 = null;
+                    num2 = null;
+                    display.textContent = "0";
+                } else if (value === "=") {
+                    if (num1 !== null && num2 !== null) {
+                        equacao += value;
+                    }
+                } else {
+                    equacao += value;
+                    display.textContent = equacao;
+                    if (num1 === null) {
+                        num1 = parseFloat(value);
+                    } else {
+                        num2 = parseFloat(value);
+                    }
+                }
+            });
+        });
+
     </script>
 </body>
 </html>
