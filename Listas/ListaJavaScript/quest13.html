@@ -19,16 +19,14 @@
     </style>
 </head>
 <body>
-    <div id="conteudo"></div>
+    <div class="conteudo"></div>
 </body>
 <script>
     function adicionarParagrafo(){
-        var key = event.key;
-
         const p = document.createElement('p');
-        p.textContent = key;
 
-        document.getElementById('conteudo').appendChild(p);
+        p.textContent = event.key;
+        document.querySelector('.conteudo').appendChild(p);
     }
 
     document.addEventListener ('keydown', adicionarParagrafo);
