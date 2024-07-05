@@ -76,7 +76,7 @@
         <div id="equacoes">
             <button class="btn" id="ad">+</button>
             <button class="btn" id="sub">-</button>
-            <button class="btn" id="mult">x</button>
+            <button class="btn" id="mult">*</button>
             <button class="btn" id="div">/</button>
         </div>
         <div id="nums">
@@ -106,7 +106,7 @@
         let bntEqual = document.querySelector("#igual");
         bntEqual.addEventListener("click", () => {
             if (num1 !== null && num2 !== null) {
-                equacao = eval(equacao);
+                equacao = eval(equacao).toFixed(2);
                 display.textContent = equacao;
                 num1 = null;
                 num2 = null;
@@ -117,19 +117,19 @@
         btns.forEach(button => {
             button.addEventListener("click", () => {
                 let value = button.textContent;
-                if (value === "AC") {
+                if (value == "AC") {
                     equacao = 0;
                     num1 = null;
                     num2 = null;
                     display.textContent = "0";
-                } else if (value === "=") {
+                } else if (value == "=") {
                     if (num1 !== null && num2 !== null) {
                         equacao += value;
                     }
                 } else {
                     equacao += value;
                     display.textContent = equacao;
-                    if (num1 === null) {
+                    if (num1 == null) {
                         num1 = parseFloat(value);
                     } else {
                         num2 = parseFloat(value);

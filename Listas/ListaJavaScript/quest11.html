@@ -11,6 +11,12 @@
             align-items: center;
             height: 100vh;
         }
+        button{
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
@@ -22,6 +28,7 @@
 
     btn.addEventListener('click', () =>{
         document.body.style.backgroundColor = "#"+genColor()+genColor()+genColor();
+        btn.style.backgroundColor = "#"+genColor()+genColor()+genColor();
     })
 
     function genColor() {
