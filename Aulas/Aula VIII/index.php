@@ -16,11 +16,9 @@
 
         echo $nome; //imprimir a váriavel
 
-        $a = $_GET["varA"]; //pegar a variável
-        $b = $_GET["varB"]; //pegar a variável
-
         $a = 2;
         $b = 3;
+        
         echo "Soma de A+B: ".$a+$b; //fazer calculo & concatenação com o "." (ponto)
     ?>
 </body>
