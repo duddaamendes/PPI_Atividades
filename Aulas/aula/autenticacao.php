@@ -1,5 +1,6 @@
 <?php
     include_once ("da_user.php");
+    //verifica se parametros foram recebidos
     if(!isset($_POST['email']) && !isset($_POST['senha'])){
         echo "
             <script>
@@ -9,12 +10,13 @@
         exit();
     }
 
+    //verifica se logine senha estão corretos
     $usr=checkUser($_POST['email'], $_POST['senha']);
     if (count($usr)==0){
         echo "login e senha invalidos";
     } else {
         echo "login e senha ok";
-        session_star();
+        session_start();
         //print_r($usr[0]["id"]);
         //var_dump($usr[0]["id"]);
         $usr=$usr;
