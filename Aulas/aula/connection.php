@@ -8,15 +8,15 @@
         $dsn="mysql:host=$host;dbname=$db;charset=$charset";
 
         try{
-            $conn = new PDO($dsn,$user,$senha);
+            $conn=new PDO($dsn,$user,$senha);
             return $conn;
-        } catch(PDOException $e){
-            echo "Erro: ".$e->getMenssager();
+        } catch(PDOException_$e){
+            echo "Erro: ".$e->getMenssage();
             exit();
         }
     }
 
-    if (connection()!=null){
+    if(connection()===null){
         echo "Conexão ok";
     }
 ?>

@@ -4,9 +4,8 @@
         echo "
             <script>
                 window.alert('Informe logine senha');
-                window.href='login.html';
-            </script>
-        ";
+                window.href='login.php?erro=1';
+            </script>";
         exit();
     }
 
@@ -15,9 +14,11 @@
         echo "login e senha invalidos";
     } else {
         echo "login e senha ok";
-        session_start();
-        print_r($usr);
-        var_dump($usr[0].['id'])
-        $SESSION['userid']=$usr[0].['id'];
+        session_star();
+        //print_r($usr[0]["id"]);
+        //var_dump($usr[0]["id"]);
+        $usr=$usr;
+        $_SESSION['userid']=$usr["id"];
+        header("Location:myhome.php");
     }
 ?>

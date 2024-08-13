@@ -20,10 +20,10 @@
 
     function selectUser($id){
         $pdo=connection();
-        $sql="SELECT * FROM users WHERE users.id=:id";
+        $sql="SELECT * FROM users WHERE id=:id";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(Array('id'=>$id));
-        return $stmt-> fetchAll();
+        $stmt->execute(Array(':id'=>$id));
+        return $stmt-> fetchAll(PDO::FETCH_ASSOC)[0];
 
     }
 
@@ -32,6 +32,6 @@
         $sql="SELECT * FROM users WHERE users.email=:email AND users.senha=:senha";
         $stmt = $pdo->prepare($sql);
         $stmt->execute(array(':email'=>$email, ':senha'=>$senha));
-        return $stmt-> fetchAll();
+        return $stmt-> fetchAll(PDO::FETCH_ASSOC)[0];
     }
 ?>

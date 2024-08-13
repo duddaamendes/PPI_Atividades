@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
+    <title>Login</title> 
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         body{
             height: 100vh;
@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <h2>login</h2>
+    <h2>Login</h2>
     <form action="autenticacao.php" method="post">
         <fieldset>
             <label for="email">Email</label>
