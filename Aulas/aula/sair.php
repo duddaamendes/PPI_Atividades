@@ -1,5 +1,5 @@
 <?php
   session_start();
   session_destroy();
-  echo "Sesão encerrada!";
+  header("Location:login.php?ok=9");
 ?>

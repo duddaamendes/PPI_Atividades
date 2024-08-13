@@ -19,13 +19,9 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <h2> Bem Vindo <?php echo $user['id']. " - ". $user['name']; ?> <h2>
-    <div class="menu">
-
-        <a href="sair.php">Sair</a>
-    </div>
+    <h2> Bem vindo(a) <?php echo $user['id']. " - ". $user['name']; ?> <h2>
     <div id="boxmain">
-        <h2>Lista usuarios</h2>
+        <h3>Lista usuarios</h3>
         <?php
             $users=selectAllUsers();
             //var_dump($users);
@@ -56,6 +52,11 @@
                 ?>
             </tr>
         </table>
+    </div>
+
+    <div class="menu">
+
+        <a href="sair.php">Sair</a>
     </div>
 </body>
 </html>

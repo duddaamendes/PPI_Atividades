@@ -34,4 +34,5 @@
         $stmt->execute(array(':email'=>$email, ':senha'=>$senha));
         return $stmt-> fetchAll(PDO::FETCH_ASSOC)[0];
     }
+
 ?>

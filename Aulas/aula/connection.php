@@ -2,7 +2,7 @@
     function connection(){
         $host="localhost";
         $user="root";
-        $senha="aluno";
+        $senha="Mendes123-Duda";
         $db="crud_ppi";
         $charset="utf8mb4";
         $dsn="mysql:host=$host;dbname=$db;charset=$charset";

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="boxmain">
-        <form action="cadastrar_novo_usuario.php" method="post">
+        <form action="atualizar_usuario.php" method="post">
         
             <h3>Edite os dados: </h3>
             <label for="nome">Nome novo: </label>
@@ -25,6 +25,9 @@
 
             <br>
             <input type="submit" value="Editar usuario" id="btn">
+
+            <br>
+            <a href="deletarUser.php" id= "btnCad"><p>Deletar usuário</p></a>
         
         </form>
     </div>
